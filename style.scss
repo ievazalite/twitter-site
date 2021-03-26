@@ -9,6 +9,8 @@ a{
 
 svg{
     background: #17202A;
+    width: 23.09px;
+    height: 21.27px;
 }
 
 .text{
@@ -17,9 +19,16 @@ svg{
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: -0.015em;
 }
 
 .side-menu{
     display: flex;
     flex-direction: column;
+    width: 240px;
+}
+
+.side-menu a{
+    height: 60px;
+    width: 250px;
 }
