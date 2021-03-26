@@ -34,3 +34,17 @@ svg{
         font-family: Helvetica Neue;
     }
 }
+
+.button {
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    color: #4BA0EC;
+    background: #4BA0EC;
+    border-radius: 100px;
+    cursor: pointer;
+}
+a.button{
+    margin-left:50px;
+}
