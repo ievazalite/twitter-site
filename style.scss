@@ -28,7 +28,10 @@ svg{
         border-radius: 100px;
         box-sizing: border-box;
 
-    }
+        &:hover,
+        &:hover svg{
+            background-color: rgb(29, 92, 117);
+        }
 
     .text{
         color: #FFFFFF;
@@ -39,6 +42,7 @@ svg{
         letter-spacing: -0.015em;
         height: 24px;
         font-family: Helvetica;
+        }
     }
 }
 
@@ -56,17 +60,10 @@ svg{
     border-radius: 100px;
     cursor: pointer;
     outline: none;
+
+    &:active{
+        background-color: rgb(35, 104, 131);
     }
-
-.button:active{
-    background-color: rgb(29, 92, 117);
-}
-
-a:hover{
-    background-color: rgb(29, 92, 117);
-}
-a:hover svg {
-    background-color: rgb(29, 92, 117);
 }
 
 
@@ -74,6 +71,22 @@ a:hover svg {
 @media only screen and (max-width: 720px) {
     .side-menu{
         font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .side-menu{
+        font-size: 17px;
+        width: 200px;
+        height: 400px;
+    }
+    .side-menu a{
+        margin-left: 10px;
+    }
+    .button{
+        position: relative;
+        right: 68px;
     }
 }
 
@@ -93,12 +106,12 @@ a:hover svg {
         display: none;
     }
     .button{
-        width: 35px;
+        width: 30px;
         height: 50px;
         margin-top: 10px;
         font-size: 15px;
         position: relative;
-        right: 77px;
+        right: 73px;
         color: transparent;
     }
 }
